@@ -1,26 +1,27 @@
 import React from 'react';
+import logo from '../assets/logo.png';
 
 function Navbar() {
 	return (
-		<nav className="flex w-full flex-row items-center p-4">
+		<nav className="flex w-full flex-row items-center px-8 py-4">
 			<section>
-				<h1 className="text-chilean-fire-700">Logo</h1>
+				<img src={logo} alt="logo" className="h-20" />
 			</section>
 			<ul className="ml-auto flex flex-row items-center gap-4">
-				<li className="text-">
+				<li className="hover:underline">
 					<a href="/">Home</a>
 				</li>
-				<li>
+				<li className="hover:underline">
 					<a href="/recipes">Recipes</a>
 				</li>
-				<li>
+				<li className="hover:underline">
 					<a href="/community">Community</a>
 				</li>
-				<li>
+				<li className="hover:underline">
 					<a href="/about">About</a>
 				</li>
 				<li>
-					<button className="rounded bg-chilean-fire-500 px-4 py-2 font-bold text-white hover:bg-chilean-fire-600 border-2 border-chilean-fire-600 active:bg-chilean-fire-700">
+					<button className="bg-wistful-500 hover:bg-wistful-600 border-wistful-600 active:bg-wistful-700 rounded border-2 px-4 py-2 font-bold text-white">
 						Login
 					</button>
 				</li>
