@@ -6,8 +6,8 @@ import sharing from '../assets/sharing.png';
 function Home() {
 	return (
 		<>
-			<section className="mt-20 flex max-h-[600px] items-center justify-center space-x-8 px-8">
-				<div className="flex-column space-y-6">
+			<section className="mt-20 grid  max-h-[600px] grid-cols-5 place-items-center gap-4 px-8">
+				<div className="flex-column col-span-3 space-y-6">
 					<h2 className="text-5xl font-bold text-wistful-700">
 						COOKING & SHARING
 					</h2>
@@ -24,19 +24,19 @@ function Home() {
 						</button>
 					</div>
 				</div>
-				<div>
-					<img src={home} alt="home" className="max-h-[600px] max-w-full" />
+				<div className="col-span-2">
+					<img src={home} alt="home" className=" max-h-[600px] max-w-full" />
 				</div>
 			</section>
-			<section className="flex max-h-[600px] items-center justify-center space-x-8 bg-wistful-200 px-8">
-				<div>
+			<section className="grid grid-cols-5 place-items-center gap-4 bg-wistful-200 px-8">
+				<div className="col-span-2">
 					<img
 						src={cooking}
 						alt="cooking"
 						className="max-h-[600px] max-w-full"
 					/>
 				</div>
-				<div className="flex-col space-y-6">
+				<div className="col-span-3 flex-col space-y-6">
 					<h3 className="text-2xl font-bold text-wistful-700">
 						EASY RECIPE CREATION PROCESS
 					</h3>
@@ -68,8 +68,8 @@ function Home() {
 					</p>
 				</div>
 			</section>
-			<section className="flex max-h-[600px] items-center justify-center space-x-8 bg-wistful-200 px-8">
-				<div className="flex-col space-y-6">
+			<section className="grid grid-cols-5 place-items-center gap-4 bg-wistful-200 px-8">
+				<div className="col-span-3 flex-col space-y-6">
 					<h3 className="text-2xl font-bold text-wistful-700">
 						SHARE YOUR CULINARY CREATIONS WITH THE WORLD!
 					</h3>
@@ -78,7 +78,7 @@ function Home() {
 						profile and connect with like-minded foodies.
 					</p>
 				</div>
-				<div>
+				<div className="col-span-2">
 					<img
 						src={sharing}
 						alt="sharing"
