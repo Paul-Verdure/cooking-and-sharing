@@ -5,9 +5,9 @@ import sharing from '../assets/sharing.png';
 
 function Home() {
 	return (
-		<>
-			<section className="mt-20 grid  max-h-[600px] grid-cols-5 place-items-center gap-4 px-8">
-				<div className="flex-column col-span-3 space-y-6">
+		<main className="grid grid-rows-5">
+			<section className="mt-20 mx-72 grid max-h-[600px] grid-cols-12 place-content-center place-items-center gap-4">
+				<div className="flex-column col-span-6 space-y-6">
 					<h2 className="text-5xl font-bold text-wistful-700">
 						COOKING & SHARING
 					</h2>
@@ -24,7 +24,7 @@ function Home() {
 						</button>
 					</div>
 				</div>
-				<div className="col-span-2">
+				<div className="col-span-6">
 					<img src={home} alt="home" className=" max-h-[600px] max-w-full" />
 				</div>
 			</section>
@@ -86,7 +86,7 @@ function Home() {
 					/>
 				</div>
 			</section>
-		</>
+		</main>
 	);
 }
 
