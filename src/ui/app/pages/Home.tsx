@@ -5,8 +5,8 @@ import sharing from '../assets/sharing.png';
 
 function Home() {
 	return (
-		<main className="grid grid-rows-5">
-			<section className="mt-20 mx-72 grid max-h-[600px] grid-cols-12 place-content-center place-items-center gap-4">
+		<main>
+			<section className="mt-20 grid max-h-[600px] grid-cols-12 place-content-center place-items-center gap-8 px-72">
 				<div className="flex-column col-span-6 space-y-6">
 					<h2 className="text-5xl font-bold text-wistful-700">
 						COOKING & SHARING
@@ -28,15 +28,15 @@ function Home() {
 					<img src={home} alt="home" className=" max-h-[600px] max-w-full" />
 				</div>
 			</section>
-			<section className="grid grid-cols-5 place-items-center gap-4 bg-wistful-200 px-8">
-				<div className="col-span-2">
+			<section className="grid grid-cols-12 place-content-center place-items-center gap-8 bg-wistful-200 px-72">
+				<div className="col-span-5">
 					<img
 						src={cooking}
 						alt="cooking"
 						className="max-h-[600px] max-w-full"
 					/>
 				</div>
-				<div className="col-span-3 flex-col space-y-6">
+				<div className="col-span-6 flex-col space-y-7">
 					<h3 className="text-2xl font-bold text-wistful-700">
 						EASY RECIPE CREATION PROCESS
 					</h3>
@@ -46,22 +46,22 @@ function Home() {
 					</p>
 				</div>
 			</section>
-			<section className="flex max-h-[600px] flex-col items-center justify-center bg-white px-16 py-8">
+			<section className="flex flex-col items-center justify-center gap-10 bg-white px-72 py-20">
 				<h3 className="text-center text-2xl font-bold text-wistful-700">
 					PERSONNALIZE YOUR EXPERIENCE
 				</h3>
 				<div className="flex items-center justify-evenly space-x-8">
-					<p>
+					<p className="text-xl max-w-prose">
 						Customize your culinary journey! Log in to personalize your recipe
 						feed, receive recommendations, and connect with friends for shared
 						cooking experiences.
 					</p>
-					<p>
+					<p className="text-xl max-w-prose">
 						Never lose a recipe again! Create an account to save and organize
 						your favorite recipes, making it easy to find them whenever you're
 						ready to cook.
 					</p>
-					<p>
+					<p className="text-xl max-w-prose">
 						Join our vibrant cooking community! Sign up to share your recipes,
 						connect with fellow food enthusiasts, and discover what's cooking in
 						your friends' kitchens.
